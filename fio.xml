@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <name>Hello Kitty</name>
+        <course>BSIT</course>
+        <yearsec>3B-G2</yearsec>
+        <adviser>Ms. John Patrick A. Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <photo>hellokitty.png</photo>
+    </user>
+	<user>
+        <name>Kuromi</name>
+        <course>BSIT</course>
+        <yearsec>3B-G2</yearsec>
+        <adviser>Ms. John Patrick A. Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <photo>kuromi.png</photo>
+    </user>
+	<user>
+        <name>My Melody</name>
+        <course>BSIT</course>
+        <yearsec>3B-G2</yearsec>
+        <adviser>Ms. John Patrick A. Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <photo>mymelody.png</photo>
+    </user>
+	<user>
+        <name>Cinnamoroll</name>
+        <course>BSIT</course>
+        <yearsec>3B-G2</yearsec>
+        <adviser>Ms. John Patrick A. Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <photo>cinnamoroll.png</photo>
+    </user>
+  <user>
+        <name>Pompompurin</name>
+        <course>BSIT</course>
+        <yearsec>3B-G2</yearsec>
+        <adviser>Ms. John Patrick A. Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <photo>pompompurin.png</photo>
+    </user>
+    <user>
+        <name>Pochacco</name>
+        <course>BSIT</course>
+        <yearsec>3B-G2</yearsec>
+        <adviser>Ms. John Patrick A. Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <photo>pochacco.png</photo>
+    </user>
+    <user>
+        <name>Kiki</name>
+        <course>BSIT</course>
+        <yearsec>3B-G2</yearsec>
+        <adviser>Ms. John Patrick A. Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <photo>kiki.png</photo>
+    </user>
+    <user>
+        <name>Lala</name>
+        <course>BSIT</course>
+        <yearsec>3B-G2</yearsec>
+        <adviser>Ms. John Patrick A. Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <photo>lala.png</photo>
+    </user>
+    <user>
+        <name>Keroppi</name>
+        <course>BSIT</course>
+        <yearsec>3B-G2</yearsec>
+        <adviser>Ms. John Patrick A. Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <photo>keroppi.png</photo>
+    </user>
+    <user>
+        <name>Badtz Maru</name>
+        <course>BSIT</course>
+        <yearsec>3B-G2</yearsec>
+        <adviser>Ms. John Patrick A. Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <photo>badtzmaru.png</photo>
+    </user>
+
+</users>
