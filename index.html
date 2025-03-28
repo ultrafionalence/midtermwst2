@@ -37,7 +37,7 @@
 <body>
     <h1>ABC Colleges</h1>
     <h2>Library Users</h2>
-    <div class="container" id="fiona_medina.xml”></div>
+    <div class="container" id="fiona_medina”></div>
     
     <script>
         fetch(‘fiona_medina.xml’)
@@ -47,7 +47,7 @@
                 const xmlDoc = parser.parseFromString(str, "text/xml");
                 const users = xmlDoc.getElementsByTagName("user");
 
-                const container = document.getElementById("fiona_medina.xml");
+                const container = document.getElementById("fiona_medina");
 
                 for (let i = 0; i < users.length; i++) {
                     const user = users[i];
