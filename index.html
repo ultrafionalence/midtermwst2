@@ -37,10 +37,10 @@
 <body>
     <h1>ABC Colleges</h1>
     <h2>Library Users</h2>
-    <div class="container" id="fiona_medina”></div>
+    <div class="container" id="fiona_medina"></div>
     
     <script>
-        fetch(‘fiona_medina.xml’)
+        fetch('fiona_medina.xml')
             .then(response => response.text())
             .then(str => {
                 const parser = new DOMParser();
@@ -59,8 +59,8 @@
                             <img src="${user.getElementsByTagName("photo")[0].textContent}" alt="User Photo">
                         </div>
                         <p><strong>Course:</strong> ${user.getElementsByTagName("course")[0].textContent}</p>
-                        <p><strong>Year Level / Section:</strong> ${user.getElementsByTagName(“yearsec")[0].textContent}</p>
-                        <p><strong>Adviser:</strong> ${user.getElementsByTagName("adviser")[0].textContent}</p>
+                        <p><strong>Year Level / Section:</strong> ${user.getElementsByTagName("yearsec")[0].textContent}</p>
+                        <p><strong>Adviser:</strong> ${user.getElementsByTagName("advisor")[0].textContent}</p>
                         <p><strong>School Year:</strong> ${user.getElementsByTagName("schoolYear")[0].textContent}</p>
                     `;
                     container.appendChild(userCard);
