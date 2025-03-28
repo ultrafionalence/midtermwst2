@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Colleges Library Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 250px;
+            text-align: left;
+            background: #f9f9f9;
+        }
+        .card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>ABC Colleges</h1>
+    <h2>Library Users</h2>
+    <div class="container" id="fio”></div>
+    
+    <script>
+        fetch(‘fio..xml’)
+            .then(response => response.text())
+            .then(str => {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(str, "text/xml");
+                const users = xmlDoc.getElementsByTagName("user");
+
+                const container = document.getElementById("harvey_jimeno");
+
+                for (let i = 0; i < users.length; i++) {
+                    const user = users[i];
+                    const userCard = document.createElement("div");
+                    userCard.classList.add("card");
+                    userCard.innerHTML = `
+                        <div class="card-header">
+                            <strong>${user.getElementsByTagName("name")[0].textContent}</strong>
+                            <img src="${user.getElementsByTagName("photo")[0].textContent}" alt="User Photo">
+                        </div>
+                        <p><strong>Course:</strong> ${user.getElementsByTagName("course")[0].textContent}</p>
+                        <p><strong>Year Level / Section:</strong> ${user.getElementsByTagName(“yearsec")[0].textContent}</p>
+                        <p><strong>Adviser:</strong> ${user.getElementsByTagName("adviser")[0].textContent}</p>
+                        <p><strong>School Year:</strong> ${user.getElementsByTagName("schoolYear")[0].textContent}</p>
+                    `;
+                    container.appendChild(userCard);
+                }
+            })
+            .catch(error => console.error("Error loading XML data:", error));
+    </script>
+</body>
+</html>
